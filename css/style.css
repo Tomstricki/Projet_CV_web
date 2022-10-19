@@ -1,0 +1,668 @@
+@font-face {
+    font-family: "cafe";
+    src: url(../font/Louis_George_Cafe_Light.ttf);
+}
+body{
+    margin : 0;
+    font-family: "cafe",Calibri, sans-serif;
+    font-size: 1.5rem;
+    background-color: rgb(228, 228, 228);
+}
+header {
+    background: url("../img/prog1.png") no-repeat center fixed rgba(41,50,71);
+    position: relative;
+    padding-bottom: 15%;
+}
+header h1 {
+  text-align: center;
+  margin:0;
+  font-size: 6rem;
+  color: white;
+  padding-top: 4%;
+  font-weight: 300;
+  padding-bottom: 2%;
+}
+header h1 span {
+  font-size: 4rem;
+}
+
+header h1 #couleur {
+    color : rgb(92, 201, 49);
+}
+
+header div {
+  position: absolute;
+  text-align: center;
+  bottom: -8%;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+
+header img {
+    width:15%;
+    border-radius: 10%;
+    box-shadow: 0px 0px 10px 4px rgb(34, 34, 34);
+}
+
+/*SECTION PRESENTATION/LANGUE */
+
+main #section1 {
+    padding-top: 5%;
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap:2%;
+    background: linear-gradient(0.25turn, #434894,rgb(70, 49, 82));
+    padding:5% 3% 5% 3%;
+    position: relative;
+    color:white;
+}
+
+/*PARTIE PRESENTATION*/
+
+#presentation {
+  grid-column: 1/span 4;
+  text-align: justify;
+  padding: 0 5% 15% 5%;
+}
+
+#presentation h2 {
+  text-align: center;
+}
+/*PARTIE LANGUE*/
+#langue {
+  text-align: center;
+  width: 25%;
+  position:absolute;
+  top: 60%;
+  left: 32.5%;
+  background-color: rgba(20, 20, 20, 0.98);
+  padding: 2% 5% 2% 5%;
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px 2px rgb(20, 20, 20);
+}
+
+#langue h2 {
+  margin-top:0;
+  color: white;
+}
+
+#langue p{
+    margin-bottom: 1rem;
+    text-align: center;
+    color:white;
+}
+
+/*barre de progression Langue*/
+
+#progressfr {
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+  margin-bottom:10px ;
+  border-radius: 30px;
+}
+
+#progressen {
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    margin-bottom:10px ;
+    border-radius: 30px;
+}
+#progressnl {
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+  margin-bottom:10px ;
+  border-radius: 30px;
+}
+  
+#barre1 {
+    width: 100%;
+    height: 30px;
+    background:linear-gradient(0.25turn, #9198e5,rgb(41,50,71));
+    border-radius: 30px;
+    font-size: 1rem;
+    text-align:center;
+    vertical-align: middle;
+    line-height: 30px;
+    color: white;
+}
+  
+#barre2 {
+    width: 80%;
+    height: 30px;
+    background:linear-gradient(0.25turn, #9198e5,rgb(41,50,71));
+    border-radius: 30px;
+    font-size: 1rem;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 30px;
+    color: white;
+}
+  
+#barre3 {
+    width: 50%;
+    height: 30px;
+    background:linear-gradient(0.25turn, #9198e5,rgb(41,50,71));
+    border-radius: 30px;
+    font-size: 1rem;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 30px;
+    color: white;
+}
+
+/*Section avec domaine recherché*/
+
+main #section2 {
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap:2%;
+  background: url("../img/code1.png") no-repeat center fixed,linear-gradient(0.25turn,#453fa1,#3d389b);
+  background-size: cover;
+  padding:15% 3% 5% 3%;
+  color: white;
+}
+
+/*PARTIE DOMAINE RECHERCHE*/
+
+#dom {
+  grid-column: 1/span 2;
+}
+#dom h2{
+  text-align: center;
+}
+
+/*PARTIE COMPETENCE*/
+
+#competence{
+  grid-column: 3/span 2;
+}
+#competence h2 {
+  text-align: center;
+}
+#grid_compe {
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+}
+.reveal-compe{
+  opacity: 1;
+  transform: translateX(30px);
+  background: linear-gradient(0.25turn,rgba(119, 31, 131, 0.699),rgba(53, 66, 136, 0.685));
+  width:75%;
+  padding: 2% 0;
+  margin:2% 0;
+  box-shadow: 2px 4px 4px rgb(37, 37, 37);
+  border-radius: 3%;
+}
+
+/*Section avec experience et formation*/
+
+main #section3 {
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap:2%;
+  background: linear-gradient(0.75turn, #434894,rgb(70, 49, 82));
+  padding:3% 8% 10% 8%;
+}
+.container h2{
+  color: white;
+}
+#formation.container{
+    padding-bottom: 35%;
+    margin-bottom: 20%;
+    grid-column: 1/span 2;
+}
+div.container h2 {
+  text-align: center;
+}
+div.container p {
+  margin: 0;
+  text-align: center;
+}
+.container ul {
+  list-style: none;
+  position: absolute;
+  color: rgb(255, 255, 255);
+  font-size: 1.1rem;
+  width: 70%;
+}
+
+.container ul:before {
+  content: '';
+  width: 1%;
+  height: 100%;
+  position: absolute;
+  border-left: 2px dashed rgb(24, 152, 190);
+}
+
+.container ul li {
+  position: relative;
+  margin-left: 7.4% ;
+  background-color: rgba(41,50,71,255);
+  padding: 6%;
+  border-radius: 6px;
+  width: 100%;
+  box-shadow: 0 0 8px 4px rgba(0, 0, 0, 0.12);
+}
+
+.container ul li:not(:first-child) {
+  margin-top: 15%;
+}
+
+.container ul li > span {
+  width: 2px;
+  height: 100%;
+  background: rgb(109, 111, 211);
+  left: -6.7%;
+  top: 0;
+  position: absolute;
+}
+
+.container ul li > span:before, .container ul li > span:after {
+  content: '';
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  position: absolute;
+  background: #86b7e7;
+  left: -5px;
+  top: 0;
+}
+
+.container ul li span:after {
+  top: 100%;
+}
+
+.container ul li > div {
+  margin-left: 5%;  
+}
+
+.container div .info {
+  font-weight: 300;
+}
+
+.container span.number {
+  height: 100%;
+}
+
+.container span.number span {
+  position: absolute;
+  font-size: 0.9rem;
+  left: -40px;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+}
+
+.container span.number span:first-child {
+  top: -5%;
+}
+
+.container span.number span:last-child {
+  top: 93%;
+}
+
+.container ul li div span {
+    font-weight: bold;
+    color: rgb(92, 201, 49);
+}
+
+#info{
+  grid-column: 3/span 2;
+}
+
+/*PARTIE AVEC CONTACT*/
+
+main #footer {
+  padding-top: 5%;
+  display:grid;
+  grid-column: 1/span 4;
+  gap:2%;
+  background: url('../img/contact.jpg') center;
+  background-size: cover;
+  padding:5% 3% 5% 3%;
+  justify-items: center;
+}
+#informations {
+    text-align: center;
+    color: white;
+    width: 38%;
+    background: linear-gradient(0.75turn, #666dd1,rgb(70, 49, 82));
+    opacity: 0.97;
+    border-radius: 8px;
+    padding-bottom: 2%;
+    box-shadow: 4px 4px 4px rgb(61, 61, 61);
+}
+
+.contact {
+  padding: 0 0 3% 0;
+}
+
+#linked{
+    width: 7%;
+    vertical-align:top;
+    padding-right: 10px;
+}
+#mail{
+    width: 10%;
+    vertical-align:-3px;
+}
+#phone{
+  width: 8%;
+  vertical-align:middle;
+  padding-right: 10px;
+}
+#position{
+  width: 10%;
+  vertical-align:middle;
+}
+.contact a {
+  text-decoration: none;
+  color: rgb(111, 241, 59);
+}
+.contact a:hover{
+  color: black;
+}
+
+/*MISE EN PAGE POUR ANIMATION D APPARITION*/
+
+.reveal {
+  opacity: 0;
+  transform: translateY(30px);
+}
+.reveal-compe p{
+  margin:0;
+  text-align: center;
+}
+.reveal-visible {
+  opacity: 1;
+  transform: translateY(0);
+  transition: 1.2s ;
+}
+
+/* Media queries */
+
+@media screen and (max-width:1280px){
+  header {
+    background: url("../img/prog1.png") no-repeat top rgba(41,50,71);
+  }
+  header h1 {
+    font-size: 3.8rem;
+  }
+  header h1 span {
+    font-size: 3.5rem;
+  }
+  #langue{
+    width: 40%;
+    left: 25%;
+  }
+  main #section3 {
+    padding-bottom: 25%;
+  }
+  #informations{
+    width: 50%;
+  }
+  .reveal-compe{
+    transform: translateY(0px);
+  }
+
+}
+@media screen and (max-width:1280px){
+  #presentation {
+    padding-bottom: 25%;
+  }
+}
+@media screen and (max-width:870px){
+  
+  body{
+    font-size: 0.9rem;
+  }
+  header h1 {
+    font-size: 3.5rem;
+  }
+  header h1 span {
+    font-size: 3rem;
+  }
+  header img {
+    width:18%;
+    bottom: -5%;
+    left: 41%;
+  }
+  #presentation {
+    padding-bottom: 27%;
+  }
+  
+  #langue{
+    width: 60%;
+    left: 15%;
+  }
+  main #section3 {
+    padding-bottom: 35%;
+  }
+  #barre1 {
+    height: 20px;
+    font-size: 0.7rem;
+    line-height: 20px;
+  }
+  #barre2 {
+    height: 20px;
+    font-size: 0.7rem;
+    line-height: 20px;
+  }
+  #barre3 {
+    height: 20px;
+    font-size: 0.7rem;
+    line-height: 20px;
+  }
+  .container ul {
+    font-size: 1rem; 
+  }
+  .container span.number span {
+    font-size: 0.8rem;
+  }
+  
+}@media screen and (max-width:650px){
+  header div h1 {
+    font-size: 3rem;
+  }
+  header h1 span {
+    font-size: 2.8rem;
+  }
+  header img {
+    bottom: -7%;
+    left: 41%;
+  }
+  #dom {
+    padding-top: 5%;
+  }
+  #competence {
+    padding-top: 5%;
+  }
+  #presentation {
+    padding-bottom: 29%;
+  }
+  
+  #langue{
+    width: 60%;
+    left: 15%;
+  }
+  #barre1 {
+    height: 17px;
+    font-size: 0.6rem;
+    line-height: 17px;
+  }
+  #barre2 {
+    height: 17px;
+    font-size: 0.6rem;
+    line-height: 17px;
+  }
+  #barre3 {
+    height: 17px;
+    font-size: 0.6rem;
+    line-height: 17px;
+  }
+  #formation.container{
+    padding-bottom: 30%;
+    margin-bottom: 20%;
+    grid-column: 1;
+  }
+  #info{
+    grid-column: 1;
+    grid-row: 2;
+    padding-top: 30%;
+  }
+  main #section3 {
+    grid-template-columns: 1fr;
+    padding-bottom: 50%;
+  }
+  .reveal-visible {
+    transition: 1s ;
+  }
+}
+@media screen and (max-width:550px){
+  main #section2 {
+    grid-template-columns: 1fr;
+  }
+  #presentation {
+    padding-bottom: 35%;
+  }
+  #dom {
+    grid-column: 1;
+  }
+  #competence{
+    grid-column: 1;
+    grid-row: 2;
+    padding-top: 0%;
+  }
+}
+@media screen and (max-width:500px){
+  main #section3 {
+    grid-template-columns: 1fr;
+    padding-bottom: 70%;
+  }
+  #presentation {
+    padding-bottom: 43%;
+  }
+  #formation.container{
+    padding-bottom: 30%;
+    margin-bottom: 40%;
+    grid-column: 1;
+  }
+  #info{
+    grid-column: 1;
+    grid-row: 2;
+    padding-top: 30%;
+  }
+  #informations{
+    width: 70%;
+  }
+}
+@media screen and (max-width:400px){
+  header h1 {
+    font-size: 3.5rem;
+  }
+  #presentation {
+    padding-bottom: 45%;
+  }
+  #formation.container{
+    padding-bottom: 30%;
+    margin-bottom: 60%;
+    grid-column: 1;
+  }
+  div.container h2 {
+    text-align: center;
+    margin-bottom: 0;
+  }
+}
+@media screen and (max-width:350px){
+  main #section1 {
+    padding:5% 3% 20% 3%;
+  }
+  #dom {
+    padding-top: 5%;
+  }
+  #formation.container{
+    padding-bottom: 30%;
+    margin-bottom: 60%;
+    grid-column: 1;
+  }
+  div.container h2 {
+    text-align: center;
+    margin-bottom: 0;
+  }
+  #info{
+    grid-column: 1;
+    grid-row: 2;
+    padding-top: 40%;
+  }
+  #informations{
+    width: 80%;
+  }
+}
+@media print {
+  header h1 {
+    font-size: 3rem;
+  }
+  header h1 span {
+    font-size: 2rem;
+  }
+  header div {
+    bottom: -16%;
+  }
+  header img {
+    width:20%;
+    box-shadow: none;
+  }
+  #presentation {
+    padding: 0 5% 90% 5%;
+  }
+  #langue h2 {
+    margin-top:0;
+    padding-bottom: 8%;
+    color: white;
+  }
+  #langue {
+    width: 80%;
+    left: 5%;
+    box-shadow: none;
+  }
+  .container ul:before {
+    border-left: 0px;
+  }
+  .reveal{
+    opacity: 1;
+  }
+  .reveal-compe{
+    font-size: 1.2rem;
+    box-shadow: 0 0 4px rgba(0, 0, 0, .12), 0 2px 2px rgba(0, 0, 0, .08);
+  }
+  #footer {
+    margin-top: 30%;
+  }
+  #informations {
+    width: 60%;
+    box-shadow: none;
+  }
+  main #section3 {
+    margin-top: 10%;
+  }
+  #langue h2 {
+    margin-bottom: 0;
+  }
+  #langue p{
+    margin-bottom: 0;
+}
+  #barre1 {
+    border: 1px solid black;
+    margin-bottom: 10%;
+  }
+  #barre2 {
+    border: 1px solid black;
+    margin-bottom: 10%;
+  }
+  #barre3 {
+      border: 1px solid black;
+      margin-bottom: 10%;
+  }
+}
